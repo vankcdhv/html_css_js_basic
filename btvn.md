@@ -6,19 +6,14 @@ Tất cả ví dụ trong các bài tập này có thể viết thêm hoặc ch�
 - Lấy phần tử có ID = "title".
 - In ra innerText của nó trong Console (tab “Console” của DevTools).
 
-// Gợi ý (trong dom.js)
-const titleEl = document.getElementById("title");
-console.log("Nội dung của #title là:", titleEl.innerText);
-
-
 2. Lấy tất cả phần tử có class = "class_title":
 	- Dùng document.getElementsByClassName("class_title").
 	- In ra độ dài length của mảng trả về.
 	- In ra từng element hoặc innerText của nó (dùng vòng lặp).
 
-	3.	Lấy element theo tag name (ví dụ <img>):
-	•	Dùng document.getElementsByTagName("img").
-	•	In ra giá trị src của ảnh (phần tử đầu tiên).
+3.	Lấy element theo tag name (ví dụ img):
+- Dùng document.getElementsByTagName("img").
+- In ra giá trị src của ảnh (phần tử đầu tiên).
 
 ## Bài Tập 2: Thay đổi nội dung và style
 1. Thay đổi nội dung thẻ h3 (ID = "id_h3") thành một câu tuỳ ý
@@ -51,7 +46,7 @@ document.body.appendChild(newParagraph);
 ```
 
 
-2. Xoá phần tử <img id="logo_pnk"> khi bấm nút:
+2. Xoá phần tử img id="logo_pnk" khi bấm nút:
 - Gợi ý: Tạo 1 nút mới (hoặc dùng button có id buttonFeature) trong file HTML.
 - Trong hàm removeImage(), lấy element bằng document.getElementById("logo_pnk") và gọi remove():
 

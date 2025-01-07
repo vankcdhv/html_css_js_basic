@@ -1,4 +1,5 @@
 //  I. Các kiến thức cần nắm vững
+
 //  1. Khai báo biến và kiểu dữ liệu
 // 	•	Var, let, const
 // 	•	Number, String, Boolean, Null, Undefined, Object, Array, …

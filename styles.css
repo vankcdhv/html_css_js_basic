@@ -1,0 +1,16 @@
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #3366ff;
+}
+
+p {
+  font-size: 24px;
+}
+
+.class_title {
+  color: #ff0000;
+}

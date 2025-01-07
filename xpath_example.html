@@ -1,0 +1,37 @@
+<!-- 
+	•	document.evaluate() cho phép chạy một câu truy vấn XPath.
+	•	xpath = "//div[@class='test-div']": Đây là biểu thức XPath để lấy <div> có thuộc tính class="test-div".
+	•	XPathResult.FIRST_ORDERED_NODE_TYPE yêu cầu trả về node đầu tiên (nếu có). 
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ví dụ XPath</title>
+  </head>
+  <body>
+    <div class="test-div">
+      Đây là div được chọn bằng XPath
+    </div>
+
+    <script>
+      // Cú pháp JavaScript sử dụng XPath
+      const xpath = "//div[@class='test-div']";
+      const result = document.evaluate(
+        xpath,              // Biểu thức XPath
+        document,           // Context node (document hoặc 1 node cụ thể)
+        null,               // Resolver cho namespace, thường để null
+        XPathResult.FIRST_ORDERED_NODE_TYPE, // Kiểu kết quả muốn trả về
+        null
+      );
+
+      // singleNodeValue lấy node đầu tiên tìm được
+      const element = result.singleNodeValue;
+      if (element) {
+        console.log("Tìm thấy element:", element.innerText);
+      } else {
+        console.log("Không tìm thấy element phù hợp.");
+      }
+    </script>
+  </body>
+</html>

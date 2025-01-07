@@ -38,3 +38,13 @@ title.addEventListener('click', function(event) {
     console.log('Title clicked');
     alert(event.target.innerText);
 });
+
+//  4. Đổi màu các thẻ có class là class_title
+const changeColor = () => {
+    const classTitles = document.getElementsByClassName('class_title');
+    console.log('classTitles: ', classTitles);
+    for (const title of classTitles) {
+        console.log('title: ', title.innerHTML);
+        title.style.color = 'blue';
+    }
+}

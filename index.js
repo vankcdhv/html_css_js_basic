@@ -61,15 +61,17 @@ let a = 10;
 const PI = 3.14;
 var b = "Xin chào";
 let c = true;
+
 let d = null;
 let e = undefined;
 let f = { name: "Nguyen Van A", age: 20 };
-let g = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
+const g = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+f = { name: "Nguyen Van B", age: 30 }; // Error
 //  2. Toán tử
 let x = 10;
 let y = 5;
 let z = '10';
+let sumXY = x + y;
 console.log("x + y = ", x + y); // 15
 console.log("x - y = ", x - y); // 5
 console.log("x * y = ", x * y); // 50
@@ -97,7 +99,8 @@ console.log("x <= y = ",x <= y); // false
 
 //  3. Câu lệnh điều kiện
 let age = 20;
-if (age < 18) {
+if (age <= 20) {
+    console.log("Không cho phép vào trang web");
     console.log("Không cho phép vào trang web");
 }
 else if (age >= 18 && age < 50) {
